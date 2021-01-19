@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/margin16dp"
+    android:layout_marginLeft="@dimen/margin16dp"
+    android:layout_marginTop="@dimen/margin8dp"
+    android:layout_marginBottom="@dimen/margin8dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text = "Title"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_item_title"/>
+
+    <TextView
+        android:id="@+id/tv_noteDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_item_date"
+        tools:text = "Date"/>
+
+</LinearLayout>

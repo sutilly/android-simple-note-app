@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNoteFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_editFragment"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <!-- Image View -->
+    <ImageView
+        android:id="@+id/iv_noteImage"
+        android:layout_width="0dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="@dimen/margin32dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_marginEnd="@dimen/margin32dp"
+        android:contentDescription="@string/a_picture_describing_the_note_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_editFragment"
+        tools:src="@tools:sample/avatars" />
+
+    <!--title-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin32dp"
+        android:layout_marginEnd="@dimen/margin32dp"
+        android:hint="@string/title"
+        android:textSize="@dimen/textSize_edit_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_noteImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--content-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin32dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_marginEnd="@dimen/margin32dp"
+        android:textSize="@dimen/textSize_edit_content"
+        android:hint="@string/content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--date -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/et_date"
+        android:layout_width="@dimen/margin0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_edit_date"
+        android:layout_marginTop="@dimen/margin_top_edit_textfields"
+        android:layout_marginEnd="@dimen/margin32dp"
+        android:padding="@dimen/padding_date_textview"
+        android:text="@string/date"
+        android:textSize="@dimen/textSize_edit_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_chooseDate"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <!-- Btn Date -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_chooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_edit_date_btn"
+        android:layout_marginTop="@dimen/margin_top_edit_textfields"
+        android:text="@string/choose_a_date"
+        android:textSize="@dimen/textSize_edit_date_btn"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:icon="@drawable/ic_calendar_today_white_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <!-- FAB Btn Save -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_saveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_edit_fab"
+        android:layout_marginBottom="@dimen/margin_edit_fab"
+        android:contentDescription="@string/save_note"
+        android:src="@drawable/ic_done_white_18dp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

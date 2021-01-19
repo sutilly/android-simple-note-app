@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin0dp">0dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin24dp">24dp</dimen>
+    <dimen name="margin32dp">32dp</dimen>
+    <dimen name="margin120dp">120dp</dimen>
+
+    <!--Edit Fragment-->
+    <dimen name="textSize_edit_title">16sp</dimen>
+    <dimen name="textSize_edit_content">16sp</dimen>
+    <dimen name="textSize_edit_date">16sp</dimen>
+    <dimen name="textSize_edit_date_btn">12sp</dimen>
+    <dimen name="margin_start_edit_date_btn">32dp</dimen>
+    <dimen name="margin_top_edit_textfields">8dp</dimen>
+    <dimen name="margin_start_edit_date">8dp</dimen>
+    <dimen name="margin_edit_fab">16dp</dimen>
+    <dimen name="padding_date_textview">12dp</dimen>
+
+    <!--List Fragment-->
+    <dimen name="textSize_item_title">18sp</dimen>
+    <dimen name="textSize_item_date">16sp</dimen>
+
+</resources>

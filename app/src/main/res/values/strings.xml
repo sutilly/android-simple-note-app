@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="edit_note">Button to edit note</string>
+    <string name="share_note">Button to share note</string>
+    <string name="save_note">Safe Note</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="date">Date</string>
+    <string name="choose_a_date">Choose a date</string>
+    <string name="my_notes">My Notes</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="click_here_to_add_a_note">Click here to add a note</string>
+    <string name="edit_note_title">Edit Note</string>
+    <string name="a_picture_describing_the_note_content">A picture describing the note content</string>
+    <string name="no_result">Sorry, there is no note with this title.</string>
+    <string name="search_title">Please enter note title</string>
+    <string name="search_message">Please enter the title of the note you are looking for:</string>
+    <string name="search_posBtn">Search</string>
+    <string name="search_negBtn">Cancel</string>
+    <string name="new_note_title">New note</string>
+    <string name="new_note_content">Your text</string>
+    <string name="reaction_decline_permission">Too bad!</string>
+</resources>
